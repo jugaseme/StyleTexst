@@ -11,8 +11,8 @@
     <div class="container">
         <h1>Generador de Estilos de Texto</h1>
         
-        <label for="inputText">Escribe tu texto:</label>
-        <input type="text" id="inputText" placeholder="Texto de prueba" value="Texto de prueba">
+        <label for="inputText"></label>
+        <input type="text" id="inputText" class="input" placeholder="Escribe tu texto aquí" >
 
         <label for="fontSize">Tamaño de letra:</label>
         <input type="range" id="fontSize" min="10" max="100" value="30">
@@ -29,18 +29,22 @@
             <option value="Verdana">Verdana</option>
         </select>
 
-        <label for="fontWeight">Negrita:</label>
-        <input type="checkbox" id="fontWeight">
+        <label class="custom-checkbox">Negrita:
+            <input name="dummy" type="checkbox" id="fontWeight">
+            <span class="checkmark"></span>
+          </label>
+          
 
-        <label for="fontStyle">Cursiva:</label>
-        <input type="checkbox" id="fontStyle">
+        <label for="fontStyle">
+        Cursiva:<input type="checkbox" class="ui-checkbox" id="fontStyle">
+        </label>
 
         <div id="preview">Texto de prueba</div>
 
         <h3>Código CSS generado:</h3>
         <textarea id="cssCode" readonly></textarea>
 
-        <button>
+        <button id="button_top">
             <span class="button_top"> Copiar CSS </span>
           </button>
     </div>
