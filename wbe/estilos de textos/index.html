@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleText</title>
+    <link rel="stylesheet" href="styler.css">
+</head>
+<body>
+ 
+    <div class="container">
+        <h1>Generador de Estilos de Texto</h1>
+        
+        <label for="inputText">Escribe tu texto:</label>
+        <input type="text" id="inputText" placeholder="Texto de prueba" value="Texto de prueba">
+
+        <label for="fontSize">Tamaño de letra:</label>
+        <input type="range" id="fontSize" min="10" max="100" value="30">
+
+        <label for="fontColor">Color de texto:</label>
+        <input type="color" id="fontColor" value="#000000">
+
+        <label for="fontFamily">Fuente:</label>
+        <select id="fontFamily">
+            <option value="Arial">Arial</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Verdana">Verdana</option>
+        </select>
+
+        <label for="fontWeight">Negrita:</label>
+        <input type="checkbox" id="fontWeight">
+
+        <label for="fontStyle">Cursiva:</label>
+        <input type="checkbox" id="fontStyle">
+
+        <div id="preview">Texto de prueba</div>
+
+        <h3>Código CSS generado:</h3>
+        <textarea id="cssCode" readonly></textarea>
+
+        <button>
+            <span class="button_top"> Copiar CSS </span>
+          </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
